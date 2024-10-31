@@ -9,22 +9,30 @@
     <link rel="stylesheet" href="project.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="test.css">
     <link rel="icon" type="image/x-icon" href="TforPortfolio.ico">
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
+            <div class="nav-container">
+                <button class="hamburger" aria-label="Toggle navigation">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
+    
     <div id="hero" class="hero">
         <div class="hero-content">
             <h1>Tyler Boyer is a Software Engineer based in USA</h1>
@@ -34,45 +42,38 @@
     </div>
     <main>
         <section class="ab" id="about">
-            
             <h2>About Me</h2>
             <div class="image">
                 <img src="IMG_0139.jpg" alt="Professional Photo of Tyler Boyer"/>
-    
-            <p>Hello! I'm a soon-to-be graduate in Computer Science with a minor in Mathematics, stepping out into the professional world in Spring 2025. My passion lies in building innovative websites and engaging in projects that challenge me. I thrive on problem-solving and turning complex problems into simple, visual solutions. My academic background fuels my desire to continuously learn and apply my knowledge in practical ways. I believe in the power of programming to transform and improve the lives of people around the world. Join me on this exciting journey as I look forward to making a significant impact in the tech industry!</p>
-        </div>
+                <p>Hello! I'm a soon-to-be graduate in Computer Science with a minor in Mathematics, stepping out into the professional world in Spring 2025. My passion lies in building innovative websites and engaging in projects that challenge me. I thrive on problem-solving and turning complex problems into simple, visual solutions. My academic background fuels my desire to continuously learn and apply my knowledge in practical ways. I believe in the power of programming to transform and improve the lives of people around the world. Join me on this exciting journey as I look forward to making a significant impact in the tech industry!</p>
+            </div>
         </section>
         <section id="projects">
             <h2>Projects</h2>
             <div class="project">
                 <div class="slideshow-container">
-
                     <div class="mySlides" id="fade">
-                      <img src="img1.jpg" style="width:100%">
-                      <div class="text">Caption Text</div>
+                        <img src="img1.jpg" alt="Project Image 1" style="width:100%">
+                        <div class="text">Caption Text</div>
                     </div>
-                  
                     <div class="mySlides" id="fade">
-                      <img src="img2.jpg" style="width:100%">
-                      <div class="text">Caption Two</div>
+                        <img src="img2.jpg" alt="Project Image 2" style="width:100%">
+                        <div class="text">Caption Two</div>
                     </div>
-                  
                     <div class="mySlides" id="fade">
-                      <img src="img3.jpg" style="width:100%">
-                      <div class="text">Caption Three</div>
+                        <img src="img3.jpg" alt="Project Image 3" style="width:100%">
+                        <div class="text">Caption Three</div>
                     </div>
-                
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                  </div>
-                  <br>
-                  
-                  <div style="text-align:center">
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+                <br>
+                <div style="text-align:center">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
-                  </div>
-                <script src="Action/slides.js"></script>
+                </div>
+            </div>
         </section>
         <section id="contact">
             <h2>Contact Me</h2>
@@ -80,9 +81,9 @@
         </section>
     </main>
     <footer>
-        <div class = "footerContainer">
+        <div class="footerContainer">
             <div class="socialIcons">
-              <a href="https://www.instagram.com/tylerboye19/">  <span class="insta"><i class="fa-brands fa-instagram"></i></span></a>
+                <a href="https://www.instagram.com/tylerboye19/"><span class="insta"><i class="fa-brands fa-instagram"></i></span></a>
                 <a href="https://www.linkedin.com/in/tyler-boyer-0a1326183"><span class="linkin"><i class="fa-brands fa-linkedin"></i></span></a>
                 <a href="https://www.youtube.com/channel/UCNqDmOwywue_RtbhqUYTQIw"><span class="yt"><i class="fa-brands fa-youtube"></i></span></a>
             </div>
@@ -95,12 +96,11 @@
                 </ul>
             </div>
             <div class="footerBottom">
-                <p>Copyright &copy;2024 Designed by <span class="designer">Tyler Boyer</span></p>
+                <p>Copyright ©2024 Designed by <span class="designer">Tyler Boyer</span></p>
             </div>
         </div>
     </footer>
     <script src="script.js"></script>
     <script src="slides.js"></script>
-    
 </body>
 </html>
