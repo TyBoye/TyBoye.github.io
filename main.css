@@ -8,7 +8,7 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    background-color: white
+    background-color: black;
 }
 
 ul {
@@ -23,7 +23,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #e57373; /* Vibrant Red */
+    background: black; /* Vibrant Red */
     opacity: 1;
     padding: 10px 20px;
     margin: 20px auto; /* Center the nav bar */
@@ -72,7 +72,7 @@ nav:hover {
     width: 100%;
     padding: 0;
     margin: 0;
-    background: #e57373; /* Vibrant Red */
+    background: black; /* Vibrant Red */
     border-radius: 15px; /* Match the nav bar's rounded corners */
 }
 
@@ -96,13 +96,13 @@ nav:hover {
 /* Media queries for responsiveness */
 @media (max-width: 700px) {
     nav {
-        background: #e57373;
+        background: black;
     }
     .nav-links {
         display: none;
         flex-direction: column;
         width: 100%;
-        background: #e57373; /* Vibrant Red */
+        background: black; /* Vibrant Red */
         position: absolute;
         top: 60px;
         left: 0;
@@ -134,7 +134,7 @@ nav:hover {
     }
     .nav-links.active {
         display: flex;
-        background: #e57373;
+        background: black;
 
     }
 }
