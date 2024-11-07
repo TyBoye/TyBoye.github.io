@@ -105,3 +105,15 @@
       width: 10px;
   }
 }
+
+.carousel-item {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.carousel-item img {
+  height: 400px; /* Adjust to your preference */
+  object-fit: cover; /* Ensures no stretching */
+  width: 100%; /* Full-width */
+}
