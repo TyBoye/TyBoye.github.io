@@ -8,6 +8,8 @@
     overflow: hidden;
 }
 
+
+
 #headerContainer a {
     color: white;
     text-decoration: none;
@@ -17,7 +19,7 @@
     padding:  1rem;
     border-radius: 4px;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    display: inline-block; 
+    display: relative; 
 }
 
 ul {
