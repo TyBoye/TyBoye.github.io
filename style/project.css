@@ -1,29 +1,71 @@
-/* Projects */
+
 .carousel {
-  max-width: 1280px; /* Adjust width */
-  max-height: 720px; /* Adjust height */
-  margin:  auto; /* Centers the carousel */
+  max-width: 65%; 
+  max-height: 720px;
+  margin: 2rem auto; 
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);  /* Subtle shadow effect */
 }
 
 .carousel img {
-  height: 100%; /* Ensures images fit within the defined height */
-  object-fit: cover; /* Crops images to fill the space */
   width: 100%;
+  height: auto;  
+  object-fit: cover;
 }
 
 .carousel-caption {
-  background-color: rgba(40, 23, 23, 0.8); /* Semi-transparent black background */
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.8), rgba(0,0,0,0.6));
+  text-color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  
 }
 
 .carousel-caption h5 {
-  font-size: 2em;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
   color: white;
 }
 
 .carousel-caption p {
-  font-size: 1.5em;
+  font-size: 1.2rem;
+  margin: 0;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    max-height: 500px; 
+  }
+
+  .carousel-caption {
+    width: 80%;
+    padding: 1rem;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .carousel-caption {
+    width: 90%;
+    padding: 0.8rem;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
 }

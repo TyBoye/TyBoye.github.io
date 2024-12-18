@@ -1,109 +1,114 @@
 /* Footer */
 footer {
-    background-color: black;
-    color: white;
+    background-color: #111;
+    color: #fff;
     text-align: center;
-    padding: 0px 0;
-    margin: 0;
+    padding: 2rem 0;
     box-sizing: border-box;
 }
 
 .footerContainer {
-    width: 100%;
-    padding: 70px 30px 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
 }
 
 .socialIcons {
     display: flex;
     justify-content: center;
+    gap: 15px;
+    margin-bottom: 2rem;
 }
 
-.socialIcons a{
-    text-decoration:none;
-    padding:10px;
-    background-color:white;
-    margin:10px;
-    border-radius:50%;
+.socialIcons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out;
 }
 
-.socialIcons a i{
+.socialIcons a i {
     font-size: 1.75em;
-    color:black;
-    opacity:0.5;
-}
-.socialIcons a .insta i{
-  background-image: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+    color: #000;
+    opacity: 0.5;
+    transition: color 0.3s ease, opacity 0.3s ease;
 }
 
-.socialIcons a .linkin i{
-    color: blue;
+.socialIcons a .insta i {
+    background-image: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.socialIcons a .yt i{
-    color:red;
+.socialIcons a .linkin i {
+    color: #0077b5;
 }
 
-.socialIcons a:hover{
-    background-color: black;
-    transition:0.5s;
+.socialIcons a .yt i {
+    color: #ff0000;
 }
 
-.socialIcons a:hover i{
-    color:white;
-    transition:0.5s;
+.socialIcons a:hover {
+    background-color: #000;
 }
 
-.footerNav{
-    margin: 30px 0;
-}
-
-.footerNav ul{
-    display:flex;
-    justify-content:center;
-}
-
-.footerNav ul li a{
-    text-decoration: none;
-    color: white;
-    margin: 20px;
-    font-size: 1.2em;
-    opacity:0.7;
-    transition:0.5s;
-
-}
-
-.footerNav ul li a:hover{
+.socialIcons a:hover i {
+    color: #fff;
     opacity: 1;
 }
 
-.footerBottom{
-    background-color:black;
-    padding:20px;
-    text-align:center;
-
-}
-.footerBottom p{
-    color:white;
+.footerNav {
+    margin: 2rem 0;
 }
 
-.designer{
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footerNav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
     opacity: 0.7;
-    text-transform:uppercase;
-    letter-spacing:1px;
-    font-weight:400;
-    margin:0px 5px;
+    transition: opacity 0.3s ease;
 }
 
-@media (max-width: 700px){
-    .footerNav ul{
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+.footerBottom {
+    background-color: #000;
+    padding: 1rem 0;
+}
+
+.footerBottom p {
+    color: #fff;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+@media (max-width: 700px) {
+    .footerNav ul {
         flex-direction: column;
+        align-items: center;
     }
-    .footerNav ul li{
-        width:100%;
+
+    .footerNav ul li {
+        width: 100%;
         text-align: center;
-        margin:10px;
+        margin: 0.5rem 0;
     }
 }
