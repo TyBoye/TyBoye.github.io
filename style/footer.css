@@ -98,11 +98,6 @@ footer {
     opacity: 1;
 }
 
-.footerBottom {
-    background-color: #000;
-    padding: 1rem 0;
-}
-
 .footerBottom p {
     color: #fff;
 }

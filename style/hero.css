@@ -60,7 +60,14 @@
 }
 
 .github {
-    animation: moveHero 1s infinite alternate;
+    animation: moveHero 5s infinite alternate;
+    justify-content: center;
+}
+.github i {
+    font-size: 30px;
+    margin-right: 5px;
+    color: black;
+    opacity: 0.8;
 }
 
 @keyframes moveHero {
